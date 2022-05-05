@@ -2,6 +2,10 @@ package main;
 
 class Professor {
   String nome;
+
+  Professor(String nome){
+      nome = nome;
+  }
 }
 
 // Criando a classe professor

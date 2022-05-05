@@ -2,21 +2,22 @@ package main;
 
 class Disciplina {
     String nome;
-    Professor professor = new Professor();
+    Professor professor;
     float notaFinal;
 
-    // Criando os dois professores
-    Professor professor1 = new Professor(); 
-    prof.nome = "Mateus";  
-    Professor professor2 = new Professor();
-    prof.nome = "Christian";
+    // Criando os professores com o construstor
+    Disciplina(String nome, String nome, float notaFinal){
+        Professor professor = new Professor(nome);
+        nome = nome;
+        this.notaFinal = notaFinal;
+    }
 
     public void ExibirRelatorioDisc(){
-        System.out.println("A disciplina" + disciplina + "lecionada pelo professor(a)" + professor + "obteve nota final de" + notaFinal)
+        System.out.println("A disciplina" + nome + "lecionada pelo professor(a)" + professor.nome + "obteve nota final de" + notaFinal);
     }
 
     public float RetornarNotaFinal(){
-
+        return notaFinal;
     }
   
   }

@@ -5,26 +5,42 @@ class Curso {
     Disciplina discplina1;
     Disciplina discplina2;
     Disciplina discplina3;
+
+    // Criando meu curso
+    Curso(String nome, Disciplina discplina1,  Disciplina discplina2, Disciplina discplina3){
+        nome = nome;
+        discplina1 = discplina1;
+        discplina2 = discplina2;
+        discplina3 = discplina3;
+    }
     
     float calcularMedia(){
-        media = notaFinal() / 3;
-        return media
+        media = (discplina1.notaFinal + discplina2.notaFinal + discplina3.notaFinal)/ 3;
+        return media;
     }
 
-    boolean estaAprovado(float media){
-        if media >= 60{
-            System.out.println("Aprovado"); 
+    boolean estaAprovado(){
+       if (calcularMedia() >= 60) {   // recebendo a media e verificando a média
+            return True 
         }
-        else{
-            System.out.println("Reprovado"); 
-        }
-
-        return false;
+        return false; 
     }
     
+    // Método para exibir as notas por disciplina
     float notaPorDisciplina(int id){
-
-        return
+        switch (id) {
+            case 1:
+                return discplina1.notaFinal;
+                break;
+            case 2:
+                return discplina2.notaFinal;
+                break;
+            case 3: 
+                return discplina3.notaFinal;
+                break;
+            default:
+                break;
+        }
     }
   
   // Criando a classe Curso e seus métodos
