@@ -1,3 +1,5 @@
+package main;
+
 class Curso {
     String nome;
     Disciplina discplina1;
@@ -16,9 +18,11 @@ class Curso {
         else{
             System.out.println("Reprovado"); 
         }
+
+        return false;
     }
     
-    float notaPorDisciplina(){
+    float notaPorDisciplina(int id){
 
         return
     }
