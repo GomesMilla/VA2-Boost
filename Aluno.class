@@ -1,0 +1,20 @@
+class Aluno {
+    String nome;
+    int matricula;
+    Curso curso = new Curso();
+
+    Curso curso;
+    
+    Aluno(String nome, int matricula, Curso curso){
+        this.nome = nome;
+        this.matricula = matricula;
+        this.curso = curso;
+    }
+
+    public void exibirRelatorio(){
+        System.out.println("O aluno" + aluno + "do curso de" + curso + "está" + estaAprovado)
+    }
+  
+  }
+  
+  // Criando a classe Curso e seu método

@@ -1,0 +1,10 @@
+class Professor {
+  String nome;
+  
+  Professor(String nome){
+      this.nome = nome;
+  }
+
+}
+
+// Criando a classe professor e seu método

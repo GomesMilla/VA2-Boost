@@ -1,0 +1,22 @@
+class Disciplina {
+    String nome;
+    Professor professor = new Professor();
+    float notaFinal;
+
+    // Criando os dois professores
+    Professor professor1 = new Professor(); 
+    prof.nome = "Mateus";  
+    Professor professor2 = new Professor();
+    prof.nome = "Christian";
+
+    public void ExibirRelatorioDisc(){
+        System.out.println("A disciplina" + disciplina + "lecionada pelo professor(a)" + professor + "obteve nota final de" + notaFinal)
+    }
+
+    public float RetornarNotaFinal(){
+
+    }
+  
+  }
+  
+  // Criando a classe disciplina e seu método
